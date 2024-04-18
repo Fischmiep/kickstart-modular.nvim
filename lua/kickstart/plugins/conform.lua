@@ -25,7 +25,11 @@ return {
         }
       end,
       formatters_by_ft = {
+        cpp = { 'clang-format' },
+        latex = { 'latexindent' },
         lua = { 'stylua' },
+        markdown = { 'markdown-toc', 'mdformat' },
+        python = { 'isort', 'ruff_format' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
